@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7dc3365-7a9f-4419-ada9-95b4c4f0b36e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/KochavaTrackerPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/KochavaTrackerPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../ReleaseNotes.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../ReleaseNotes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../VERSION.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../VERSION.ini" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1ug1EEIwt7MucnwJ1DXME7v5RDj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/jamesmorris/git/Cordova-KochavaTracker/Library/KochavaTrackerCordova/src/ios"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7dc3365-7a9f-4419-ada9-95b4c4f0b36e" name="Default Changelist" comment="" />
+      <created>1625072305749</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625072305749</updated>
+      <workItem from="1625072307309" duration="32000" />
+      <workItem from="1677860984329" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+// Add entry that allows AAR files to be located by Gradle.
+repositories{    
+  flatDir {
+      dirs 'libs'
+   }
+}
+
+// Add all Kochava SDK Native modules.
+dependencies {
+   implementation(name:'KochavaCore', ext:'aar')
+   implementation(name:'KochavaTracker', ext:'aar')
+   implementation(name:'KochavaTrackerEvents', ext:'aar')
+   implementation(name:'KochavaTrackerEngagement', ext:'aar')
+   implementation(name:'KochavaTrackerDatapointNetwork', ext:'aar')
+}

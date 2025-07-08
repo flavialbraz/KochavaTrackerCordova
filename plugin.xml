@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.kochava.tracker"
+    version="3.7.0">
+
+    <!-- Metadata -->
+    <name>KochavaTracker</name>
+    <description>KochavaTracker plugin for Cordova</description>
+    <license>Commercial License - see LICENSE file</license>
+    <keywords>kochava</keywords>
+    <author>kochava</author>
+
+    <!-- Cordova Version -->
+    <engines>
+        <engine name="cordova" version=">=8.0.0" />
+    </engines>
+
+    <!-- Wrapper JS Layer -->
+    <js-module src="www/KochavaTracker.js" name="KochavaTracker">
+        <clobbers target="KochavaTracker" />
+    </js-module>
+    <js-module src="www/KochavaTrackerLogLevel.js" name="KochavaTrackerLogLevel">
+        <clobbers target="KochavaTrackerLogLevel" />
+    </js-module>
+    <js-module src="www/KochavaTrackerEventType.js" name="KochavaTrackerEventType">
+        <clobbers target="KochavaTrackerEventType" />
+    </js-module>
+
+	<!-- android -->
+    <platform name="android">
+        <!-- Plugin definition -->
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="KochavaTrackerPlugin">
+				<param name="android-package" value="com.kochava.tracker.KochavaTrackerPlugin" />			
+			</feature>
+		</config-file>
+
+        <!-- Build Gradle -->
+        <framework src="src/android/KochavaTracker.gradle" custom="true" type="gradleReference" />
+
+        <!-- Wrapper -->
+        <source-file src="src/android/KochavaTrackerPlugin.java" target-dir="src/com/kochava/tracker" />
+
+        <!-- Core -->
+		<source-file src="src/android/libs/KochavaCore.aar" target-dir="libs" />
+
+        <!-- Tracker -->
+        <source-file src="src/android/libs/KochavaTracker.aar" target-dir="libs" />
+
+        <!-- Tracker Optional Modules -->
+        <source-file src="src/android/libs/KochavaTrackerEvents.aar" target-dir="libs" />
+        <source-file src="src/android/libs/KochavaTrackerEngagement.aar" target-dir="libs" />
+        <source-file src="src/android/libs/KochavaTrackerDatapointNetwork.aar" target-dir="libs" />
+		
+	</platform>
+
+    <!-- ios -->
+    <platform name="ios">
+        <!-- Plugin definition -->
+        <config-file target="config.xml" parent="/*">
+			<feature name="KochavaTrackerPlugin">
+				<param name="ios-package" value="KochavaTrackerPlugin" />
+			</feature>
+        </config-file>
+
+        <!-- Wrapper -->
+		<header-file src="src/ios/KochavaTrackerPlugin.h" />
+		<source-file src="src/ios/KochavaTrackerPlugin.m" />
+
+        <!-- SDK Framework -->
+        <framework src="src/ios/KochavaSDK/KochavaCore.xcframework" embed="true" custom="true" />
+        <framework src="src/ios/KochavaSDK/KochavaTracker.xcframework" embed="true" custom="true" />
+
+        <!-- Frameworks -->
+        <framework src="Foundation.framework" weak="true" />
+        <framework src="UIKit.framework" weak="true" />
+        <framework src="CoreGraphics.framework" weak="true" />
+        <framework src="AVFoundation.framework" weak="true" />
+        <framework src="AdSupport.framework" weak="true" />
+        <framework src="CoreTelephony.framework" weak="true" />
+        <framework src="iAd.framework" weak="true" />
+        <framework src="SystemConfiguration.framework" weak="true" />
+        <framework src="WebKit.framework" weak="true" />
+
+    </platform>
+</plugin>

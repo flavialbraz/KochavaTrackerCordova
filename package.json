@@ -1,0 +1,33 @@
+{
+    "version": "3.7.0",
+    "name": "com.kochava.tracker",
+    "cordova_name": "Kochava Tracker SDK Cordova Plugin",
+    "description": "Cordova plugin for the Kochava",
+    "license": "Commercial - see License file",
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios",
+        "analytics",
+        "attribution",
+        "kochava"
+    ],
+    "platforms": [
+        "ios",
+        "android"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=8.0.0"
+        },
+        {
+            "name": "cordova-android",
+            "version": ">=8.0.0"
+        },
+        {
+            "name": "cordova-ios",
+            "version": ">=5.0.0"
+        }
+    ]
+}
